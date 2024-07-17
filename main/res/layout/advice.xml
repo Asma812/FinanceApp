@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F8D8E5">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:backgroundTint="@android:color/white"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Financial Advice"
+        app:titleTextColor="@android:color/black" />
+
+    <!-- Image -->
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/advi"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Phrase "Financial advice from the experts" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Financial advice from the experts"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Phrase "What is your primary financial goal?" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is your primary financial goal?"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Options de buts financiers -->
+    <!-- Options de buts financiers -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Option "I want to save money" avec logo -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/budg"
+            android:text="I want to save money"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/white"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Option "I want to pay my debt off" avec logo -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/money"
+            android:text="I want to pay my debt off"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/white"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Option "I want to learn how to invest" avec logo -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/analyz"
+            android:text="I want to learn how to invest"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/white"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Bouton "Next" -->
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/black"
+        android:onClick="onNextButtonClick"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FManagement</string>
+    <string name="welcome_to_your_wallet">Welcome to your wallet!</string>
+    <string name="log_in">Log in</string>
+    <string name="enter_amount">Enter_amount</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
+    <string name="select_category">Select Category</string>
+    <string name="next">Next</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="enregistrer_les_param_tres">Save settings</string>
+    <string name="options_de_notification">Notification options</string>
+    <string name="son">Sound</string>
+    <string name="vibration">Vibration</string>
+    <string name="transactions_importantes">Large Transactions</string>
+    <string name="d_penses_inhabituelles">Unusual expenses</string>
+    <string name="ch_ances_de_paiement">Payment deadlines</string>
+    <string name="budgets_saved_successfully">Budgets saved successfully</string>
+</resources>

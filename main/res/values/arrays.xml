@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>Food</item>
+        <item>Accommodation</item>
+        <item>Transportation</item>
+        <!-- Add more categories as needed -->
+    </string-array>
+    <string-array name="Themes">
+        <item>I want to save money</item>
+        <item>I want to pay my debt off</item>
+        <item>I want to learn how to invest</item>
+        <!-- Add more categories as needed -->
+    </string-array>
+    <string-array name="save_money_articles">
+        <item>Article 1: Saving Tips</item>
+        <item>Article 2: Building an Emergency Fund</item>
+        <item>Article 3: Investing in High-Yield Savings Accounts</item>
+    </string-array>
+
+    <string-array name="pay_debt_off_articles">
+        <item>Article 1: Strategies for Paying Off Debt</item>
+        <item>Article 2: Debt Snowball vs. Debt Avalanche</item>
+        <item>Article 3: Consolidating Debt with Personal Loans</item>
+    </string-array>
+
+    <string-array name="learn_invest_articles">
+        <item>Article 1: Introduction to Investing</item>
+        <item>Article 2: Stock Market Basics</item>
+        <item>Article 3: Building a Diversified Investment Portfolio</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="280dp"
+        android:text="Create an Account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="normal|bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewUsername"
+        android:layout_width="66dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+
+    <ImageView
+        android:id="@+id/imageViewPassword"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/password"
+        app:layout_constraintStart_toStartOf="@+id/imageViewUsername"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUsername" />
+
+    <ImageView
+        android:id="@+id/imageViewConfirmPassword"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/password"
+        app:layout_constraintStart_toStartOf="@+id/imageViewUsername"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPassword" />
+
+    <ImageView
+        android:id="@+id/imageViewEmail"
+        android:layout_width="64dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/email"
+        app:layout_constraintStart_toStartOf="@+id/imageViewUsername"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewConfirmPassword" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:hint="Username"
+        app:layout_constraintStart_toEndOf="@+id/imageViewUsername"
+        app:layout_constraintTop_toTopOf="@+id/imageViewUsername" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPassword"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPassword" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/imageViewConfirmPassword"
+        app:layout_constraintTop_toTopOf="@+id/imageViewConfirmPassword" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:hint="Address"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEmail"
+        app:layout_constraintTop_toTopOf="@+id/imageViewEmail" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="163dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/Blue"
+        android:text="Sign Up"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ll_budgets" type="id" />
+    <item name="buttonSaveBudgets" type="id" />
+    <item name="buttonReset" type="id" />
+    <item name="spinnerCategory" type="id" />
+    <item name="editTextAmount" type="id" />
+    <item name="calendarView" type="id" />
+    <item name="buttonCancel" type="id" />
+    <item name="buttonSave" type="id" />
+    <item name="datePicker" type="id" />
+    <item name="textArticle2_3" type="id" />
+    <item name="lineChart" type="id" />
+</resources>

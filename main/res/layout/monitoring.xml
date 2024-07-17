@@ -1,0 +1,192 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:title="Monitoring"
+        android:backgroundTint="@color/rose"
+        android:titleTextColor="@android:color/white" />
+
+    <!-- Image -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Votre image -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/finance"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+
+    <!-- Phrase "Manage your budget" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage your budget"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+         />
+
+    <!-- Liste des catégories de dépenses avec des champs pour définir les budgets mensuels -->
+    <LinearLayout
+        android:id="@+id/ll_budgets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Catégorie de dépenses: Alimentation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Food" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monthly Budget"
+                android:drawableLeft="@drawable/budget"
+                android:tag="budget"
+                android:inputType="numberDecimal"
+                android:paddingStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Catégorie de dépenses: Logement -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accommodation" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monthly Budget"
+                android:drawableLeft="@drawable/budget1"
+                android:tag="budget"
+                android:inputType="numberDecimal"
+                android:paddingStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Catégorie de dépenses: Transport -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Transportation" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Monthly Budget"
+                android:drawableLeft="@drawable/budget2"
+                android:tag="budget"
+                android:inputType="numberDecimal"
+                android:paddingStart="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Image -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Image -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/alert1"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Phrase "Set alert notifications for budget limits" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set alert notifications for monitoring"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <!-- Options d'alerte -->
+    <CheckBox
+        android:id="@+id/checkBoxAlertSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAlertVibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibration" />
+
+    <!-- Boutons Enregistrer les budgets et Réinitialiser -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp">
+
+        <Button
+            android:id="@+id/buttonSaveBudgets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save budgets"
+            android:backgroundTint="@color/rose" />
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rose"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
